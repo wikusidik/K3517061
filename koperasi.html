@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+			Daftar Anggota
+		</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<script src = "js/js/jquery.min.js"></script>
+	<script src = "js/jquery-ui/jquery-ui.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/jquery-ui.min.css"rel = "stylesheet">
+	<link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/local.css" rel="stylesheet">
+	</head>
+	<body id = "page-top">
+	<div id = "header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger allBlack" href="#page-top">KOPERASI WARGA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+	</div>
+	<div id = "localContainer">
+		<h3  class = "navbar-brand text-uppercase">Apa Itu Koperasi??</h3>
+		<div id = "accordion">
+			<h3 class = "h3">Sekilas tentang koperasi</h3>
+			<video id = "vid1" controls>
+				<source src = "vid/Video pembelajaran Koperasi.mp4" type = "video/mp4" />
+			</video>
+			<h3 class = "h3">Mars Koperasi</h3>
+				<audio id = "audio1" controls>
+					<source src = "audio/Mars-Koperasi.mp3" />
+				</audio>
+		</div>
+	</div>
+	
+	</body>
+	<script>
+		$(document).ready(function(){
+			$("#accordion").accordion();
+			if($("#vid1").is(":hidden") == "true"){
+				$("#vid1").get(0).pause();
+				$("#audio1").get(0).play();
+			}else{
+				$("#audio1").get(0).pause();
+				$("#vid1").get(0).play();
+			}
+		});
+	</script>
+</html>

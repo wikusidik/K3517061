@@ -1,0 +1,60 @@
+*{
+	margin : 0;
+	padding : 0;
+	text-decoration : none;
+}
+.allBlack{
+	background-color : #000000;
+	color : #ffffff;
+}
+#header{
+	width : 100%;
+	background-color : #000000;
+	height : auto;
+	min-height : 50px;
+	position : fixed;
+	top : 0;
+	left : 0;
+}
+#localContainer{
+	width : 80%;
+	height : auto;
+	min-height : 500px;
+	margin-left : 10%;
+	margin-top : 100px;
+}
+.h3{
+	color : #000000;
+	text-align : center;
+	font-family : Verdana;
+}
+#localTable{
+	margin-top : 30px;
+	width : 100%;
+	height : auto;
+	font-family : Verdana;
+}
+#localTable tr td{
+	height : 30px;
+	text-align : left;
+}
+#localTable tr th{
+	height : 30px;
+	background-color : #000000;
+	color : #eeeeee;
+	text-align : center;
+	border : groove thin #ffffff;
+}
+.even{
+	background-color : #eeeeee;
+	color : #000000;
+}
+.odd{
+	background-color : #ffffff;
+	color : #000000;
+}
+video{
+	width : 640px;
+	height : 360px;
+	margin-top : 50px;
+}
